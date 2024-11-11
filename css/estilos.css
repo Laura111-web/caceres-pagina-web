@@ -1,0 +1,136 @@
+/* Elimina margenes y relleno de todos los elementos del diseño.
+Define el modelo de caja para facicilar el diseño
+Establece una fuente base para toda la pagina*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Calibri Light, sans-serif;
+}
+
+/* Define tipografía, color de texto, color de fondo y altura de linea
+para el contenido de la pagina.*/
+body {
+    font-family: Calibri Light, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* cabezara estilizada, ajustada al tamaño del area, un color de texto
+blanco para contraste, y espaciado y alineacion centrada */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+/* añade aplica un fondo a la cabecera y añade espacio */
+.header-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+
+/* establece un tamaño de fuente grande para los encabezados dentro de
+la cabecera */
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 1.5rem;
+}
+
+
+/* facilita la alineacion de los elementos, centra los elementos de 
+la lista horizontalmente y elimina los puntos y el relleno 
+predeterminado de la lista */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+/* espacio horizontal de 15px y 0 de espacio superior e inferior */
+nav ul li {
+    
+    margin:0 15px;
+}
+
+/* estiliza los enlaces, creamos "botones". Los enlaces tienen color
+blanco, en negrita, borde redondeado. El borde solo aparece cuando pasamos
+el raton sobre el enlace. */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+/* hacemos visibles los bordes */
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: #fff;
+}
+
+/* creamos un contenedor con espaciado interno, fondo blanco y centrado,
+esquinas redondeadas */
+main {
+    padding: 2rem;
+    background: #fff;
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* aplica estilos (espacio, tamaño fuente, color) a las etiquetas <section>, <h2>, <p>. 
+ */
+section {
+    margin-bottom: 2.5rem;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 0.75rem;
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+}
+
+ul {
+    list-style-position: outside; /* Los puntos estarán fuera del contenedor de la lista */
+    padding-left: 30px; /* Controla el margen izquierdo de los puntos */
+    margin-left: 20px;  /* Mueve toda la lista a la derecha */
+}
+
+/* Ajustar los márgenes de los elementos de la lista */
+li {
+    margin-left: 10px;
+
+}
+
+/* fondo oscuro y texto blanco, texto centrado, tamaño de fuerte y margen */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+

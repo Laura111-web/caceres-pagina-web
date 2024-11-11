@@ -1,0 +1,73 @@
+
+/*Estilo de los formularios*/
+/* los elementos se apilaran verticalmente. */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Para agrupar. Margenes, colores de las cajas. */
+fieldset {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/*Se aplica al titulo o etiqueta que describe la caja o agrupacion. */
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/*las etiquetas se muestra en negrita para destacarlo y da un espacio
+inferior para separar las etiquetas de los campos de entrada. */
+label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Establece relleno interno, un espaciado entre elementos, un borde,
+tamaño de fuente.*/
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Pseudoclase para resaltar campos de entrada cuando el usuario interactúa */
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Estilo del botón */
+button {
+    padding: 0.8rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Cambio de color del botón al pasar el cursor */
+button:hover {
+    background-color: #555;
+}
